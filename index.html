@@ -395,3 +395,13 @@
 </style>
 
 </html>
+<script>
+  // Check if domain is github.io
+  if (window.location.hostname.includes("https://rogierderuijter.github.io")) {
+    document.querySelectorAll("img").forEach(img => {
+      const src = img.getAttribute("src");
+      const newSrc = "/multi-col-article" + src;
+      img.src = newSrc;
+    });
+  }
+</script>
